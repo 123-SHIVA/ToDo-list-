@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5f62f4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+input,button{
+   padding: 10px;
+   border: none;
+   outline: none;
+   border-radius: 10px;
+}
+
+button{
+    padding: 10px 30px;
+}
+
+
+.todo-add{
+    margin: 20px;
+}
+
+.todo-add button{
+    
+    color: #fff;
+    background-color: #de04ff;
+}
+
+.todo-list-container{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.todo-card{
+    background-color: #14225c;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.todo-card div{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+    gap: 7px;
+}
+
+
+.green{
+    background-color: green;
+    color: #fff;
+}
+
+.yellow{
+    background-color: yellow;
+    color: #000;
+}
+
+
+/* --------------popup---------------*/
+
+
+.popup{
+    width: 500px;
+    height: 200px;
+    background-color: #de04ff;
+    padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    display: none;
+}
+.popup>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.popup input{
+    width: 60%;
+}
+
+.popup button{
+    width: 40%;
+    background-color: #14225c;
+    color: #fff;
+}
